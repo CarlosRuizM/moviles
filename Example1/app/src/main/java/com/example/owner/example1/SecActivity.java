@@ -18,7 +18,8 @@ public class SecActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sec);
 
         currentIntent = getIntent();
-        myStringExtra = currentIntent.getStringExtra("stringToSend");
+        myIntentVar = currentIntent.getStringExtra("valueToSend");
+        int myIntExtra = currentIntent.getIntExtra("myInteger", 0)
 
         myTextView = findViewById(R.id.textView);
         myTextView.setText(myStringExtra);
